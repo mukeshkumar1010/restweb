@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARAN PAROTTA KADAI</title>
+    <style>
+      
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #054c04;
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 20px;
+            /* background: url('bg.jpg') no-repeat center center/cover; */
+            /* background-color: aqua; */
+            color: white;
+            height: 300px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .banner-content {
+            max-width: 50%;
+        }
+
+        .banner-content h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: gold;
+            text-align: center;
+        }
+
+        .banner-content p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .banner-content a {
+            background: #ff5722;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .banner-content a:hover {
+            background: #e64a19;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 15px;
+            background: #f9f9f9;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1f1714;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: white;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+            }
+
+            .banner-content {
+                max-width: 100%;
+            }
+
+            .features {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .feature {
+                flex: none;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+      <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTK8YL9ek9TnidVUMIlW3C8djO35FLc2CJaw&s">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Welcome to Maran Parotta Kadai</h1>
+            <p>A genuine fine-dining experience awaits.. We serve happiness on a plate!</p>
+            <a href="#features">Explore Now</a>
+        </div>
+    </div>
+
+    <section id="features" class="features">
+        <div class="feature">
+            <img src="https://plus.unsplash.com/premium_photo-1671379086168-a5d018d583cf?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fresh Ingredients">
+            <h3>Fresh Ingredients</h3>
+            <p>Freshness Focused: "Taste the freshness, enjoy the flavor".</p>
+        </div>
+        <div class="feature">
+            <img src="https://images.unsplash.com/photo-1635975206435-934b1ca3b421?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cozy Ambiance">
+            <h3>Cozy Ambiance</h3>
+            <p>The Perfect Place to Relax and Reconnect.</p>
+        </div>
+        <div class="feature">
+            <img src="https://images.unsplash.com/photo-1632657583981-938d58b18b09?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Easy Reservations">
+            <h3>Easy Reservations</h3>
+            <p>Book your table in seconds and guarantee yourself an unforgettable experience.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Designed and developed by MUKESH KUMAR S | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
